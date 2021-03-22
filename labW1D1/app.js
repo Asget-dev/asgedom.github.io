@@ -14,9 +14,9 @@
 // 	let count = arguments.length;
 // 	let sum = 0;
 // 	for (let i=0; i<count; i++) {
-// 		sum += arguments[i];		
+// 		sum += arguments[i];
 // 	}
-	
+
 // 	return sum;
 // }
 
@@ -30,17 +30,19 @@
 	0 - 59   NC
 */
 function computeGrade(grades) {
-	if(grades >= 90){
-		return "A";
-	}else if(grades >= 80){
-		return "B";
-	}else if(grades >= 70){
-		return "C";
-	}else if(grades >= 60){
-		return "D";
-	}else{
-		return "NC";
-	}
+  for (let i = 0; i < grades.length; i++) {
+    if (grades >= 90) {
+      return "A";
+    } else if (grades >= 80) {
+      return "B";
+    } else if (grades >= 70) {
+      return "C";
+    } else if (grades >= 60) {
+      return "D";
+    } else {
+      return "NC";
+    }
+  }
 }
 
 // let x =  80;
