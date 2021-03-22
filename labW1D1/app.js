@@ -3,7 +3,7 @@
 "use strict";
 
 function pow(x, n) {
-	return x * n;
+	return x ** n;
 }
 
 function add2(n1, n2) {
@@ -30,13 +30,13 @@ function add(...args) {
 	0 - 59   NC
 */
 function computeGrade(grades) {
-	if(grade>90){
+	if(grade >= 90){
 		return "A";
-	}else if(grade>80){
+	}else if(grade >= 80){
 		return "B";
-	}else if(grade>70){
+	}else if(grade >= 70){
 		return "C";
-	}else if(grade>60){
+	}else if(grade >= 60){
 		return "D";
 	}else{
 		return "NC";
