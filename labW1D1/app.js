@@ -31,7 +31,7 @@ function add(...args) {
 */
 function computeGrade(grades) {
 	if(grades >= 90){
-		return "A";
+		return A;
 	}else if(grades >= 80){
 		return "B";
 	}else if(grades >= 70){
