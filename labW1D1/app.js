@@ -42,5 +42,6 @@ function computeGrade(grades) {
 		return "NC";
 	}
 }
-let x =  80;
-console.log(computeGrade(x));
+
+// let x =  80;
+// console.log(computeGrade(x));
