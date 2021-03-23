@@ -3,13 +3,6 @@
 "use strict";
 
 // See tests.js for behavior
-function nameString(obj) {
-   obj = {
-       firstName:[],
-       lastName:undefined,
-       coueseList: null,
-       a:5,
-   };
-   return obj;
-   
+function nameString({obj}) {
+return obj;
 }
