@@ -6,7 +6,7 @@ function nameString(obj) {
     if (obj === null) {
         return "null argument";
     }
-    if (obj === undefined || obj === null) {
+    if (obj === undefined) {
         return "no object passed";
     } 
     else{
