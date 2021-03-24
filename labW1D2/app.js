@@ -11,14 +11,14 @@
 
 function nameString(obj) {
 
-  for (let key in student) {
+  for (let key in obj) {
     key;
     return "object has one property";
   }
   
 }
 
-const student = {
-    name: 5,
+const obj = {
+    a: 5,
   };
-console.log(nameString(student));
+console.log(nameString(obj));
