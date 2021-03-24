@@ -2,25 +2,29 @@
 /* eslint-disable no-unused-vars */
 "use strict";
 
-function nameString() {
-  let str = [];
-
-  if (obj === undefined) {
-    return "No object passed";
-  } else if (obj === null) {
-    return "null argument";
-  } else {
-    for (let key in obj) {
-      str.push(key);
-    }
-    if (str.length == 0) {
-      return "object has no properties";
-    } else {
-      str.sort();
-      return str.join(".");
-    }
-  }
+function nameString(obj) {
+  
+  return "object has no properties";
 }
+let obj = {};
+console.log(nameString(obj));
+
+//   if (key === undefined) {
+//     return "No object passed";
+//   } else if (obj === null) {
+//     return "null argument";
+//   } else {
+//     for (let key in obj) {
+//       str.push(key);
+//     }
+//     if (str.length == 0) {
+//       return "object has no properties";
+//     } else {
+//       str.sort();
+//       return str.join(".");
+//     }
+//   }
+//}
 // See tests.js for behavior
 // function nameString(obj) {
 //   for (let key in obj) {
