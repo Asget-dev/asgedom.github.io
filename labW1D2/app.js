@@ -6,23 +6,19 @@
 
 
 
+
 // See tests.js for behavior
 function nameString(obj) {
-  return "object has no properties";
+  for (let key in obj) {
+    return false;
+  }
+  return true;
 }
 
-const obj = {};
+const obj = {
+    name: "a",
+};
 console.log(nameString(obj));
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -38,7 +34,7 @@ console.log(nameString(obj));
 //     key;
 //     return "object has one property";
 //   }
-  
+
 // }
 
 // const obj = {
@@ -60,4 +56,3 @@ console.log(nameString(obj));
 //     m:8,
 //   };
 // nameString(obj);
-
