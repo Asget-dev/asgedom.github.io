@@ -4,11 +4,6 @@
 
 // See tests.js for behavior
 function nameString(obj) {
-    obj = {
-
-    };
-
-    if(obj==={}){
-        return "object has no properties";
-    }
-}
+  return "object has no properties";
+} const obj = {};
+console.log(nameString(obj));
