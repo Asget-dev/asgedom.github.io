@@ -8,17 +8,19 @@
 
 
 // See tests.js for behavior
-function nameString(obj) {
-  for (let key in obj) {
-    return false;
-  }
-  return true;
-}
+// function nameString(obj) {
+//   for (let key in obj) {
+//     return false;
+//   }
+//   return true;
+// }
 
-const obj = {
-    name: "a",
-};
-console.log(nameString(obj));
+// const obj = {
+//     name: "a",
+// };
+// console.log(nameString(obj));
+// module.exports = {nameString};
+
 
 
 
@@ -42,17 +44,17 @@ console.log(nameString(obj));
 //   };
 // console.log(nameString(obj));
 
-// function nameString(obj) {
-// let x =[];
-//   for (let key in obj) {
-//     x.unshift(key);
-//   }x.sort();
-//   console.log(x.join("."));
-// }
+function nameString(obj) {
+let x =[];
+  for (let key in obj) {
+    x.unshift(key);
+  }x.sort();
+  console.log(x.join("."));
+}
 
-// const obj = {
-//     a:5,
-//     z:6,
-//     m:8,
-//   };
-// nameString(obj);
+const obj = {
+    a:5,
+    z:6,
+    m:8,
+  };
+nameString(obj);
