@@ -3,11 +3,31 @@
 "use strict";
 
 function nameString(obj) {
+    if (obj === null) {
+        return "null argument";
+    }
+    if (obj === undefined || obj === null) {
+        return "no object passed";
+    } 
+    else{
+    let x = [];
+    for (let key in obj) {
+      x.unshift(key);
+    }
+    x.sort();
+    let y = x.join(".");
+    if(y.length===0){
+        return "object has no properties";
+    }
+    return y;
+  }
   
-  return "object has no properties";
 }
-let obj = {};
-console.log(nameString(obj));
+
+// function nameString(obj){
+//   if ({}) {
+//     return "object has no properties";
+//   }
 
 //   if (key === undefined) {
 //     return "No object passed";
