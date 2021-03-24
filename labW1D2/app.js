@@ -10,9 +10,13 @@
 // console.log(nameString(obj));
 
 function nameString(obj) {
-  return "object has one property";
+  return"object has one property";
 }
 const student = {
     name:"Asgedom",
 };
-  console.log(nameString(student));
+for(let key in student){
+    key;
+}
+  
+console.log(nameString(student));
