@@ -3,10 +3,6 @@
 "use strict";
 
 
-
-
-
-
 // See tests.js for behavior
 // function nameString(obj) {
 //   for (let key in obj) {
@@ -20,13 +16,6 @@
 // };
 // console.log(nameString(obj));
 // module.exports = {nameString};
-
-
-
-
-
-
-
 
 
 
@@ -49,7 +38,8 @@ let x =[];
   for (let key in obj) {
     x.unshift(key);
   }x.sort();
-  console.log(x.join("."));
+  let y =(x.join("."));
+  return y;
 }
 
 const obj = {
@@ -58,3 +48,4 @@ const obj = {
     m:8,
   };
 nameString(obj);
+
