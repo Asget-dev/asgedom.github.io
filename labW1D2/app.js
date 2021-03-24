@@ -14,7 +14,7 @@ function nameString(obj) {
 const obj2 = {
 };
 
-// console.log(nameString(obj));
+nameString(obj2);
 // module.exports = {nameString};
 
 
