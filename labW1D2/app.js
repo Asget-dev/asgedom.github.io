@@ -10,7 +10,7 @@
 // console.log(nameString(obj));
 
 function nameString(obj) {
-return "ff";
+return "object has one property";
 }
 const student = {
     name: 5,
