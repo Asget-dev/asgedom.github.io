@@ -6,7 +6,7 @@
 function mochaTests() {
     describe("nameString", function () {
         it("object has no properties", function () {
-            assert.equal(nameString([]), "object has no properties");
+            assert.equal(nameString({}), "object has no properties");
         });
 	});
 	

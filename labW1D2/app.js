@@ -3,6 +3,12 @@
 "use strict";
 
 // See tests.js for behavior
-function nameString({obj}) {
-return obj;
+function nameString(obj) {
+    obj = {
+
+    };
+
+    if(obj==={}){
+        return "object has no properties";
+    }
 }
