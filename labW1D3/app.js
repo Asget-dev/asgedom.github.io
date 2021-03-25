@@ -59,4 +59,4 @@ function Person(name, country, grades) {
     return result;
   };
 }
-let person = new Person("bob", "usa", computeGrade());
+//let person = new Person("bob", "usa", computeGrade());
