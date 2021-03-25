@@ -26,4 +26,18 @@ function analyzer() {
 	}
 */
 function Person(name, country, grades) {
-}
+	this.name = name;
+	this.country = country;
+	this.grades = grades;
+
+	this.computeGrade = function(grades){
+		let sum=0;
+		let result;
+		for(let i=0; i < this.grades.length; i++){
+			sum+=this.grades[i];
+		}
+		result = sum/this.grades.length;
+		return result
+	};
+};
+let person = new Person("bob","usa",computeGrade());
