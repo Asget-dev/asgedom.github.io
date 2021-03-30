@@ -33,11 +33,11 @@ function addMissingProperty(obj) {
     // obj.set(location,"fairfield");
     obj = {
         name:"bob",
-        school:"miu"
+        school:"miu",
     }
     let map = new Map(Object.entries(obj));
     map.set("location","fairfield");
-    return map;
+    //return map;
 }
 
 // Constructor function which creates object {name:name, country:country, creationData:...}
@@ -45,9 +45,12 @@ function addMissingProperty(obj) {
 function Person(name, country) {
     this.name = name;
     this.country = country;
-    
-
+    person.creationDate = "date";
     let person = new Person("bob", "usa");
+
+    let end = new Date();
+    person.end.getFullYear();
+    person.end.getMonth();
 }
 
 // The parameter "students" is an array of student objects. Each student object has form
