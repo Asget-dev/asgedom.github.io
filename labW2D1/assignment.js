@@ -1,54 +1,32 @@
-/*eslint-disable*/
-const prompt = require("prompt-sync")();
-// var prompt = require('prompt');
+const students = [
+  { name: 'Quincy', grade: 96, courses:['cs301', 'cs303']},
+  { name: 'Jason', grade: 84, courses:['cs201', 'cs203']},
+  { name: 'Alexis', grade: 100, courses:['cs105', 'cs211'] },
+  { name: 'Sam', grade: 65, courses:['cs445', 'cs303'] },
+  { name: 'Katie', grade: 90, courses:['cs303', 'cs477'] }
+];
+let sum = students.filter(stu => stu.courses.includes('cs303'))
 
-function askPassword(ok, fail) {
-  let password = prompt("Password?", "");
-  if (password == "rockstar") ok();
-  else fail();
-}
-let user = {
-  name: "John",
-  loginOk() {
-    console.log(`${this.name} logged in`);
-  },
-  loginFail() {
-    console.log(`${this.name} failed to log in`);
-  },
-};
-askPassword(user.loginOk.bind(user), user.loginFail.bind(user));
-askPassword(()=>user.loginOk(true),()=>user.loginFail(false));
-askPassword(()=>user.loginOk.call(user),()=>user.loginFail.call(user));
+    .map(stu => stu.grade)
 
+    .reduce((sum, current, index, array) => sum + current / array.length, 0);
 
-/*Question Two */
-function askPassword(ok, fail) {
-  let password = prompt("Password?", "");
-  if (password == "rockstar") ok();
-  else fail();
-}
-let user = {
-  name: "John",
-  login(result) {
-    console.log(this.name + (result ? `loggid in `:`failed to log in`));
-  }
-};
+// let size = students.filter(stu => stu.courses.includes('cs303')).length;
 
-askPassword(user.login.bind(user), user.login.bind(user));
-askPassword(()=>user.login(true),()=>user.login(false));
-askPassword(()=>user.login.call(user),()=>user.login.call(user));
+let len = 0;
 
+let result2 = students.filter(stu => stu.courses.includes('cs303'))
 
-/**Question three */
-let group = {
-  title: "Our Group",
-  students: ["John", "Pete", "Alice"],
-  showList: function () {
-    this.students.forEach(
-      function (student) {
-        console.log(this.title + ": " + student);
-      }.bind(this)
-    );
-  },
-};
-group.showList();
+    .map(stu => stu.grade)
+
+    .reduce((sum, current, index, array) => {
+
+        len = array.length;
+
+        return sum + current;
+
+    });
+
+ 
+
+console.log(result2 / len);
